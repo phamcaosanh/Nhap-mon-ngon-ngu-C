@@ -11,8 +11,8 @@ int main(){
   printf("R=%.1f", R);
   printf("\n");
   printf("PI:%.2f",PI);
-  CV = (double) 2*R*PI;
-  DT = (double) R*R*PI;
+  CV = 2*R*PI;
+  DT = R*R*PI;
   printf("\n\n");
   printf("2*R*PI\tR*R*PI\n%.1f\t%.1f",CV,DT);
   
