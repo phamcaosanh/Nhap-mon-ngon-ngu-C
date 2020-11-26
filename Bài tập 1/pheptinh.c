@@ -6,19 +6,11 @@ int main(){
   //khai bao nhieu bien
   int tong, hieu, tich;
   double thuong;
-  printf("Bien a = 3 va Bien b = 5",a,b);
   tong = a + b;
-  printf("\n");
-  printf("a + b = %d ", tong);
   hieu = a - b;
-  printf("\n");
-  printf("a - b = %d", hieu);
   tich = a * b;
-  printf("\n");
-  printf("a * b = %d", tich);
   thuong = (double)a / b;
-  printf("\n");
-  printf("a / b = %0.1f", thuong);
+  printf("a\tb\ta+b\ta-b\ta*b\ta/b\n%d\t%d\t%d\t%d\t%d\t%0.1f",a,b,tong,hieu,tich,thuong);
   printf("\n");
   
   
