@@ -1,5 +1,6 @@
 #include <stdio.h>
 int main(void){
+    //khai bao bien
     int l,Met,Xentimet,Milimet;
     printf(" Nhap l= ");
     scanf("%d", &l	);
