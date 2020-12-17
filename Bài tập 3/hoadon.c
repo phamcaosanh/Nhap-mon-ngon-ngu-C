@@ -13,8 +13,8 @@ int main(){
 	
 	if(soluong >= 5 & dongia >= 500 ){
 	thanhtien=(soluong*dongia)*0.5;
-	printf("%0.1f",thanhtien);
-	}else {printf("%d",thanhtien);}	
+	printf("%.f",thanhtien);
+	}else {printf("%.f",thanhtien);}	
   getchar();
   return 0;
 }
