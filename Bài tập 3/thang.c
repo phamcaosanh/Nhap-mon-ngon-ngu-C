@@ -17,32 +17,32 @@ int main() {
           printf("31 ngay");
           break;
       case 4:
-        	printf("30 ngay");
+          printf("30 ngay");
           break;
       case 5:
-    		  printf("31 ngay");
-    		  break;
+    	  printf("31 ngay");
+          break;
       case 6:
-    		  printf("30 ngay");
-    		  break;
-    	case 7:
-    		  printf("31 ngay");
-    		  break;
-    	case 8:
-    		  printf("31 ngay");
-    		  break;
-    	case 9:
-    		  printf("30 ngay");
-    		  break;
-    	case 10:
-    		  printf("31 ngay");
-    		  break;
-    	case 11:
-    		  printf("30 ngay");
-    		  break;
-    	case 12:
-    		  printf("31 ngay");
-    		  break;
+    	  printf("30 ngay");
+    	  break;
+      case 7:
+    	  printf("31 ngay");
+    	  break;
+      case 8:
+    	  printf("31 ngay");
+    	  break;
+      case 9:
+    	  printf("30 ngay");
+          break;
+      case 10:
+    	  printf("31 ngay");
+          break;
+      case 11:
+          printf("30 ngay");
+    	  break;
+      case 12:
+    	  printf("31 ngay");
+    	  break;
       default:
           printf("Mot nam co 12 thang thoi :)) ");
     }
