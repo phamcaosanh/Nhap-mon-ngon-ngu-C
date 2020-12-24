@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main() {
-	int tong,i;
-	
-	for (i = 1,tong = tong + i;i < 11,tong < 11; ++i,++tong)
+	int tong=0;
+	for (int dem = 1; dem <=10; dem++)
 	{
-	  printf("\n%d + %d = %d",i,tong,i+tong);	
+	  tong= tong+ dem;	
 	}
+  printf("Tong la: %d",tong);
 	
     return 0;
 }
