@@ -17,11 +17,11 @@ int main(){
             printf("s = 1 + %d = %d",n,sum);
             break;
         case '3':
-	     printf("s = 1 + 2 + %d = %d",n,sum);
-	     break;
+	    printf("s = 1 + 2 + %d = %d",n,sum);
+	    break;
 	case '4':
-             printf("s = 1 + 2 + 3 + %d = %d",n,sum);
-	     break;	    
+            printf("s = 1 + 2 + 3 + %d = %d",n,sum);
+	    break;	    
         default:
             printf("s = 1 + 2 +...+%d = %d",n,sum);
     }
