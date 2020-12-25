@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(){
+	//khai bao nhieu bien
 	int n,a,b;
 	printf("Nhap n = ");
 	scanf("%d",& n);
