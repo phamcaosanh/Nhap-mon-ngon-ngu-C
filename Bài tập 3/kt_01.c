@@ -9,9 +9,7 @@ int main() {
 
 }
 
-bảng cửu chương kiểu mới
-
-
+bảng cửu chương dùng scanf
 
 #include <stdio.h>
 int main() {
@@ -29,6 +27,18 @@ int main() {
 	scanf("%d",& c);
 	printf("\n");
 	printf("%d*1=%d\n%d*2=%d\n%d*3=%d",c,c*1,c,c*2,c,c*3);
+    return 0;
+
+}
+Bảng cửu chương dùng For
+
+	#include <stdio.h>
+	int main() {
+	int a,n;
+	for(a = 1; a<=3; a++ ){printf("Bang cuu chuong %d\n",a);
+		for(n = 1;n<=3;n++){printf("%d*%d=%d\n",a,n,a*n);
+		}
+	}
     return 0;
 
 }
