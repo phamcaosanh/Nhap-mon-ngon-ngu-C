@@ -3,7 +3,7 @@
 int main(){
   int h;
   printf("h = %d",h);
-  scanf("%d",& h);
+  scanf("%d",&h);
   switch(h){
   	case 1:
   		printf("*");
