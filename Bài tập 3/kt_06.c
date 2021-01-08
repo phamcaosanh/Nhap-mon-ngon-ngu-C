@@ -95,3 +95,23 @@ int main(){
   getchar();
   return 0;
 }
+
+
+
+#include <stdio.h>
+
+int main(){
+  int h,sao = 1,kt = 1,i = 1;
+  printf("h = %d",h);
+  scanf("%d",&h);
+  for(; i<=h ; i++){
+  for(; kt<=h-i;kt++)
+    printf(" ");
+  for(sao=1;sao<=2*i-1;sao++)
+    printf("*");
+
+  printf("\n");
+  }
+  getchar();
+  return 0;
+}
