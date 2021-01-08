@@ -1,7 +1,6 @@
 #include <stdio.h>
 int main(){
   int n;
-  int a;
   int s = 0;
   scanf("%d",& n);
   while(n!=0){
