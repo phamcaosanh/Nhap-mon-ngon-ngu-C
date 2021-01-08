@@ -2,13 +2,15 @@
 #include <stdio.h>
 int main(){
   int a,n = 0;
-  while(n<20){
+  while(n<=20){
   n=n+1;
     if(a=n%2){
     if(n!=5){
     if(n!=11){
-    if(n!=15)
+    if(n!=15){
+    if(n!=21)
     printf("%d ",n);
+  }
   }
   }
   }
@@ -26,8 +28,10 @@ int main(){
     if(a=n%2){
     if(n!=5){
     if(n!=11){
-    if(n!=15)
+    if(n!=15){
+    if(n!=21)  
     printf("%d ",n);
+  }
   }
   }
   }
