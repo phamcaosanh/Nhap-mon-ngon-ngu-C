@@ -9,8 +9,8 @@ int main(){
   		printf("*");
   		break;
   	case 2:
-  		printf(" * \n");
-  		printf("***");
+  		printf("  * \n");
+  		printf("* * *");
   		break;
   	case 3:
   		printf("     * \n");
