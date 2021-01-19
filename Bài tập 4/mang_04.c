@@ -23,6 +23,6 @@ int main() {
   	Tong = Tong + a[i];
   }
   //Hien thi tong cac phan tu trong mang a
-  printf("Tong cac day so = %d",Tong);
+  printf("Tong cac phan tu trong mang a = %d",Tong);
   return 0;
 }
