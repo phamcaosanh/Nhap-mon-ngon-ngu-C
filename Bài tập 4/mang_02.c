@@ -18,7 +18,7 @@ int main() {
   	printf(" %d",a[i]);
   }
   //Hien thi cac so chan tu mang a
-  printf("Cac so chan tu mang a : ")
+  printf("Cac so chan tu mang a : ");
   for(i = 0;i < n; i++){
     if(a[i] %2 == 0){
     printf(" %d ",a[i]);
