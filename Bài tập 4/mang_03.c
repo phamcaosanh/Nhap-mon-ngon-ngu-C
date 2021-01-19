@@ -2,7 +2,7 @@
 
 int main() {
   //khai bao bien
-  int n,i;
+  int n,i,Sochan = 0,Sole = 0,So0 = 0;
   printf("Nhap n : ");
   scanf("%d", &n);
   //Tao mang a kich thuoc n
@@ -19,22 +19,22 @@ int main() {
   //Hien thi cac so chan tu mang a
   printf("\nCac so chan tu mang a : ");
   for(i = 0;i < n; i++){
-    if(a[i]  %2 == 0){
+    if(a[i]  %2 == 0 && a[i] > 0){
     printf(" %d ",a[i]);
-  }
-  }
+    Sochan+=1;
+  }}
   //Hien thi cac so le tu mang a
   printf("\nCac so le tu mang a :  ");
   for(i = 0;i < n; i++){
     if(a[i] %2 != 0){
     printf(" %d ",a[i]);
-  }
-  }
-  //Hien thi so 0 tu mang a
+    Sole+=1;
+  }}
   for(i = 0;i < n; i++){
     if(a[i]  == 0){
-    printf("\n so %d",a[i]);  
-  }
-  }
+    So0+=1;
+  }}
+  //Dem cac so chan,le,so 0 tu mang a
+  printf("\nSo chan : %d\nSo le : %d\nSo 0 : %d",Sochan,Sole,So0);
   return 0;
 }
