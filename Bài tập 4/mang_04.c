@@ -9,7 +9,7 @@ int main() {
   int a[n];
   //Nhap n phan tu cua mang a tu ban phim
   for(i = 0;i < n;i++){
-  	printf("Phan tu o mang a : ");
+  	printf("Phan tu o mang a thu %d : ",i);
     scanf("%d", &a[i]);
   }
   //Hien thi cac phan tu cua mang a
