@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int main() {
   //khai bao bien
   int n,i,m,j,phantu=0;
@@ -29,9 +27,7 @@ int main() {
     }
   //Kiem tra so nguyen 
   if(j > 0){printf("Co ton tai");
-    }
-  else(printf("Khong ton tai"));
-    printf("\n");
+  printf("\n");
   //Dem cac gia tri trong mang a
   for(i = 0;i < n;i++){
     if(a[i] == m ){
@@ -45,7 +41,9 @@ int main() {
   for(i = 0; i < n;i++  ){
     if(a[i]==m){
       printf("%d ",i);
-    }
   }
+  }
+  }
+  else(printf("Khong ton tai"));
   return 0;
 }
