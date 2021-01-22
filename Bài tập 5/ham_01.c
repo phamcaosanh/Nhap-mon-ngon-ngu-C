@@ -7,6 +7,7 @@ int main(){
   printf("x + y + z = %d",sum(x,y,z));
   return 0;
 }
+//Khối định nghĩa hàm
 int sum(int a,int b,int c){
   return a + b + c;
 }
@@ -28,6 +29,7 @@ int main(){
   printf("x + y + z = %d",sum(x,y,z));
   return 0;
 }
+//Khối định nghĩa hàm
 int sum(int a,int b,int c){
   return a + b + c;
 }
