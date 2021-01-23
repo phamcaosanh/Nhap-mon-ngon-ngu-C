@@ -1,0 +1,63 @@
+1/ Bộ chữ viết trong ngôn ngữ C bao gồm những ký tự, ký hiệu sau: (phân biệt chữ in hoa và in thường):
+-	26 chữ cái latinh hoa A,B,C...Z
+-	26 chữ cái latinh thường a,b,c ...z.
+-	10 chữ số thập phân 0,1,2...9.
+-	Các ký hiệu toán học: +, -, *, /, =, <, >, (, )
+-	Các ký hiệu đặc biệt: :. , ; " ' _ @ # $ ! ^ [ ] { } ...
+-	Dấu cách hay khoảng trống, xuống hàng (\n) và tab (\t)
+2/ Các kiểu dữ liệu cơ sở trong C :
+a/ Kiểu số nguyên (integer) :
+Kiểu số nguyên là kiểu dữ liệu dùng để lưu các giá trị nguyên hay còn gọi là kiểu đếm được. Kiểu số nguyên trong C được chia thành các kiểu dữ liệu con, mỗi kiểu có một miền giá trị khác nhau . 
+- Kiểu số nguyên 8 bits : Gồm có 2 kiểu sau :
++ Kiểu unsigned char: Lưu các số nguyên dương từ 0 đến 255. => Để khai báo một biến là kiểu ký tự thì ta khai báo biến kiểu unsigned char. Mỗi số trong miền giá trị của kiểu unsigned char tương ứng với một ký tự trong bảng mã ASCII .
++ Kiểu char: Lưu các số nguyên từ -128 đến 127. Kiểu char sử dụng bit trái nhất để làm bit dấu. => Nếu gán giá trị > 127 cho biến kiểu char thì giá trị của biến này có thể là số âm .
+- Kiểu số nguyên 16 bits : Gồm có 4 kiểu sau :
++ Kiểu enum, short int, int: Lưu các số nguyên từ -32768 đến 32767. Sử dụng bit bên trái nhất để làm bit dấu. => Nếu gán giá trị >32767 cho biến có 1 trong 3 kiểu trên thì giá trị của biến này có thể là số âm .
++ Kiểu unsigned int: Kiểu unsigned int lưu các số nguyên dương từ 0 đến 65535 .
+b/ Kiểu số thực (float) :
++ Kiểu float(32 bits) : Lưu các giá trị thực từ 1.2E-38 đến 3.4E+38 .
++ Kiểu double(64 bits) : Lưu các giá trị thực từ 2.3E-308 đến 1.7E+308 .
++ Kiểu long double(128 bits) : Lưu các giá trị thực từ 3.4E-4932 đến 1.1E+4932 .
+c/ Kiểu void :
+Kiểu void có nghĩa là “không có giá trị”, nó không được dùng trong khai báo biến thông thường mà được sử dụng để chỉ định kiểu của các hàm không có giá trị trả về .
+3/ Khái niệm và cú pháp khai báo biến trong ngôn ngữ C :
+a/ Khái niệm:
+- Biến (Variables):
++ Một chương trình ứng dụng có thể quản lý nhiều loại dữ liệu. Trong trường hợp này, chương trình phải chỉ định bộ nhớ cho mỗi đơn vị dữ liệu. Khi chỉ định bộ nhớ, có hai điểm cần lưu ý như sau :
+~Kích thước bộ nhớ (kiểu dữ liệu)
+~Vị trí bộ nhớ (địa chỉ bộ nhớ)
++ Các ngôn ngữ lập trình hiện đại cho phép chúng ta sử dụng các tên tượng trưng gọi là biến (variable), chỉ đến một vùng bộ nhớ nơi mà các giá trị cụ thể được lưu trữ .
++ Hệ điều hành hoạt động như một giao diện giữa các ô nhớ và lập trình viên.Lập trình viên không cần lưu tâm về vị trí ô nhớ mà để cho hệ điều hành đảm nhiệm .
+b/ Khai báo và khởi tạo biến:
+- Biến có thể được khai báo theo cú pháp:
+Kiểu_dữ_liệu Tên_biến;
+Trong đó: Kiểu_dữ_liệu là kiểu dữ liệu; Tên_biến là tên biến;kết thúc khai báo biến là dấu chấm phẩy.
+Ví dụ : int num; -> int là kiểu dữ liệu và num là tên biến.
+- Khởi tạo biến theo cú pháp:
+Tên_biến = Giá_trị;//ví dụ num = 5;
+- Khai báo và khởi tạo biến có thể thực hiện đồng thời:
+Kiểu_dữ_liệu Tên_biến = Giá_trị;// ví trụ int num = 5;
+4/ Khái niệm biến toàn cục và biến cục bộ trong C:
+a/ Biến toàn cục (global variable)
+- Được khai báo bên ngoài tất cả các hàm (kể cả main).
+- Thường được khai báo tại Khối Khai Báo.
+- Có thể được sử dụng tại mọi vị trí trong chương trình như các hàm, khối lệnh lặp for hay while.
+b/ Biến cục bộ (local variable)
+- Được khai báo bên trong các hàm hay khối lệnh ( ví dụ biến đếm lệnh lặp for).
+- Chỉ có thể được sử dụng trong phạm vi hàm hay khối lệnh.
+- Các tham số của hàm (nếu có) là các biến cục bộ của hàm đó.
+5/ Khái niệm và phân loại hàm trong C:
+a/ Khái niệm:
+- Hàm là một khối lệnh (nhiều lệnh) thực hiện một nhiệm vụ cụ thể nào đó (tính tổng, hiển thị thông báo đến người dùng,…)
+- Một cách hiểu khác về hàm: hàm là một sự chia nhỏ của chương trình.
+b/ Phân loại hàm (types of function):
+Hàm có 2 loại:
+-Hàm thư viện chuẩn (Standard library functions):
++ Là các hàm được xây dựng sẵn (build-in functions) trong ngôn ngữ C như hàm scanf,printf,getchar,…
++ Các hàm này được định nghĩa trong các tập tin có phần mở trộng .h như stdio.h,conio.h,…Các tập tin này phải được gộp vào chương trình thông qua chỉ định #include
+- Hàm do người dùng định nghĩa (User-defined functions): định nghĩa theo nhu cầu người dùng. Các phần tiếp theo sẽ tìm hiểu về cú pháp khai báo,định nghĩa và gọi hàm loại này.
+6/ Nguyên tắc hoạt động của hàm trong C:
+- Khi hàm được gọi ở bất kỳ chỗ nào trong chương trình thì hàm sẽ bắt đầu được thực hiện,tức sẽ rời chỗ đó để đi đến thực hiện hàm được gọi.
+- Nếu là hàm có tham số thì chương trình sẽ thực hiện truyền tham số thực cho các  tham số hình thức tương ứng trong hàm.
+- Chương trình bắt đầu thực hiện lần lượt các câu lệnh trong thân hàm đến khi nào lệnh return hoặc dấu kết thúc hàm} thì dừng lại, và thoát khỏi hàm trở về vị trí chương trình đã gọi nó và thực hiện tiếp các câu lệnh của chương trình.
+- Nếu hàm trả về giá trị thì giá trị của biểu thức return trong hàm sẽ là giá trị của hàm.
